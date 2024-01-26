@@ -1,0 +1,17 @@
+
+<section class="bg-gray-900 text-white">
+    <div class="space-y-2 mx-auto max-w-3xl text-center">
+        <h2 class="text-3xl font-bold sm:text-4xl">Centres d'intérêts </h2>
+        {% for interests in cv.interests %}
+            <article class="rounded-xl bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 p-0.5 shadow-xl transition">
+                <div class="rounded-[10px] bg-gray-100 p-4 dark:bg-gray-900 sm:p-6">
+                    <a href="#">
+                    <h3 class="mt-0.5 text-lg font-medium text-gray-900 dark:text-white">
+                    {{ interests.name }}
+                    </h3>
+                    </a>
+                </div>
+            </article>
+        {% endfor %}
+    </div>
+</section>

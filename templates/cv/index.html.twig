@@ -4,7 +4,8 @@
 
 {% block body %}
 
-{{dump(cv)}}
-
+    {% include 'cv/_hero.html.twig' %}
+    {% include 'cv/_experience.html.twig' %}
+    {% include 'cv/_interet.html.twig' %}
 
 {% endblock %}
